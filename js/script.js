@@ -6,9 +6,11 @@
 
 var cognomiListEl = ['Bianchi', 'Rossi', 'Duzioni', 'Balsano', 'Verdi'];
 var cognomeEl = prompt ('Inserisci il tuo cognome');
+// rendo l'iniziale maiuscola se non fosse stata già inserita 
+var cognomeElCapitalized = cognomeEl.charAt(0).toUpperCase() + cognomeEl.slice(1)
 
 // inserisco il cognome nell'Array
-cognomiListEl.push(cognomeEl);
+cognomiListEl.push(cognomeElCapitalized);
 
 // ordino alfabeticamente l'array aggiornato
 cognomiListEl.sort();
