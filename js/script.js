@@ -25,11 +25,11 @@ var cognomePosEl = 0;
 for (var i = 0; i < cognomiListEl.length; i++) {
   document.getElementById('cognomiList').innerHTML += ('<li>') +  cognomiListEl[i] +  ('</li>');
   if(cognomeElCapitalized == cognomiListEl[i]) {
-    congnomePosEl = i;
+    cognomePosEl = i;
   }
   console.log('cognomePosEl=', cognomePosEl);
   console.log('lista', cognomiListEl);
 }
 console.log(cognomeEl);
-document.getElementById('posizione').innerHTML += (cognomePosEl);
+document.getElementById('posizione').innerHTML += (cognomePosEl + 1);
 console.log(cognomePosEl)
